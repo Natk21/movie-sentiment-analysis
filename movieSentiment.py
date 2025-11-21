@@ -73,7 +73,8 @@ def tokenize_reviews(cleaned_reviews):
     for text in cleaned_reviews.fillna(""):
         tokens.append(nltk.word_tokenize(text))
     return tokens
-    
+
+#for creating a custom BOW dictionary if you want to do that   
 def map_word_to_count(reviews):
     """
     Takes a bunch of reviews and returns how many times each review appears
